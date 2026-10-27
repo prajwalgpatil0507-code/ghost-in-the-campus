@@ -1,0 +1,356 @@
+{
+  "_metadata": {
+    "campus_name": "Specter University of Technology & Design",
+    "dataset_version": "1.0.0-demo",
+    "is_demo_data": true,
+    "demo_disclaimer": "This campus information dataset contains demonstration records for the hackathon project. The AI system strictly adheres to these records and never invents nonexistent rooms, timetables, or campus locations.",
+    "emergency_helpline": "+1 (555) 019-4467",
+    "security_desk": "Main Gate, Security Post A",
+    "medical_center": "Student Wellness Building, Ground Floor, Room W-102"
+  },
+  "buildings": [
+    {
+      "id": "st-block",
+      "name": "Science & Technology Block",
+      "code": "ST",
+      "floors": 4,
+      "description": "Houses computer science, electrical engineering, advanced computing laboratories, and lecture theaters.",
+      "coordinates": { "x": 180, "y": 140 },
+      "amenities": ["Elevators", "Accessible Ramps", "Water Coolers", "Restrooms on all floors", "High-Speed WiFi"]
+    },
+    {
+      "id": "turing-tower",
+      "name": "Alan Turing Innovation & AI Center",
+      "code": "TAI",
+      "floors": 3,
+      "description": "Flagship artificial intelligence, robotics, and cyber security research hub.",
+      "coordinates": { "x": 380, "y": 120 },
+      "amenities": ["GPU Server Cluster", "Cleanroom", "Silent Study Pods", "Coffee Lounge"]
+    },
+    {
+      "id": "central-lib",
+      "name": "Ada Lovelace Central Library",
+      "code": "LIB",
+      "floors": 3,
+      "description": "Three floors of printed archives, digital research pods, multimedia suites, and collaborative study rooms.",
+      "coordinates": { "x": 240, "y": 300 },
+      "amenities": ["Silent Reading Floor", "Automated Book Return Kiosk", "Print & Scan Center", "Cafe Corner"]
+    },
+    {
+      "id": "student-center",
+      "name": "Ghost Commons & Student Center",
+      "code": "SC",
+      "floors": 2,
+      "description": "Vibrant hub with food court, Ghost Brew Cafe, campus bookstore, student council, and recreation lounge.",
+      "coordinates": { "x": 450, "y": 310 },
+      "amenities": ["Food Court (4 vendors)", "ATM", "Courier Locker", "Recreation Room"]
+    },
+    {
+      "id": "admin-quad",
+      "name": "Administrative Quadrangle",
+      "code": "ADM",
+      "floors": 2,
+      "description": "Offices of Admissions, Registrar, Student Affairs, Dean of Academics, and Finance Desk.",
+      "coordinates": { "x": 110, "y": 280 },
+      "amenities": ["Visitor Reception", "Fee Counters", "Conference Hall", "Registrar Archive"]
+    },
+    {
+      "id": "sports-arena",
+      "name": "Apex Sports Complex & Gymnasium",
+      "code": "SGA",
+      "floors": 2,
+      "description": "Indoor basketball courts, Olympic badminton arena, fitness gym, and sports medicine dispensary.",
+      "coordinates": { "x": 520, "y": 160 },
+      "amenities": ["Locker Rooms", "Shower Facilities", "Equipment Rental Desk", "First Aid Post"]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "room-st101",
+      "code": "ST-101",
+      "name": "Ada Lovelace Computing Hall",
+      "building_id": "st-block",
+      "building_name": "Science & Technology Block",
+      "floor": "Ground Floor",
+      "type": "Lecture Hall",
+      "capacity": 120,
+      "features": ["Dual 4K Laser Projectors", "Surround Microphones", "Tiered Seating", "Power Outlets at every desk"],
+      "accessibility": "Wheelchair ramp at North entrance, designated ADA desk front row"
+    },
+    {
+      "id": "room-st204",
+      "code": "ST-204",
+      "name": "Software Engineering Studio",
+      "building_id": "st-block",
+      "building_name": "Science & Technology Block",
+      "floor": "2nd Floor",
+      "type": "Classroom / Studio",
+      "capacity": 45,
+      "features": ["Modular Collaboration Tables", "Smart Whiteboards", "Dual-boot Linux/Windows Desktops"],
+      "accessibility": "Accessible via West Wing Elevator"
+    },
+    {
+      "id": "room-st301",
+      "code": "ST-301",
+      "name": "Cyber Security & Networks Lab",
+      "building_id": "st-block",
+      "building_name": "Science & Technology Block",
+      "floor": "3rd Floor",
+      "type": "Laboratory",
+      "capacity": 35,
+      "features": ["Isolated Air-Gapped Network", "Cisco Packet Tracer Racks", "Biometric Access Reader"],
+      "accessibility": "Accessible via West Wing Elevator"
+    },
+    {
+      "id": "room-tai102",
+      "code": "TAI-102",
+      "name": "Turing Robotics & Embedded Systems Lab",
+      "building_id": "turing-tower",
+      "building_name": "Alan Turing Innovation & AI Center",
+      "floor": "Ground Floor",
+      "type": "Laboratory",
+      "capacity": 30,
+      "features": ["Soldering Benches", "3D Printers", "Robotic Arm Test Arena", "Oscilloscopes"],
+      "accessibility": "Direct ground level ramp access"
+    },
+    {
+      "id": "room-tai201",
+      "code": "TAI-201",
+      "name": "Deep Learning & Neural Systems Lab",
+      "building_id": "turing-tower",
+      "building_name": "Alan Turing Innovation & AI Center",
+      "floor": "2nd Floor",
+      "type": "Research Lab",
+      "capacity": 25,
+      "features": ["4x NVIDIA H100 GPU Workstations", "Noise-cancelling partitions", "High-capacity cooling"],
+      "accessibility": "Central elevator access"
+    },
+    {
+      "id": "room-lib201",
+      "code": "LIB-201",
+      "name": "Quiet Research & Digital Archives",
+      "building_id": "central-lib",
+      "building_name": "Ada Lovelace Central Library",
+      "floor": "2nd Floor",
+      "type": "Library Study Zone",
+      "capacity": 80,
+      "features": ["Zero-Whisper Policy", "Individual Study Cubicles", "Microfiche & Archive Readers"],
+      "accessibility": "Library main elevator"
+    },
+    {
+      "id": "room-lib105",
+      "code": "LIB-105",
+      "name": "Group Discussion Suite Beta",
+      "building_id": "central-lib",
+      "building_name": "Ada Lovelace Central Library",
+      "floor": "1st Floor",
+      "type": "Discussion Room",
+      "capacity": 12,
+      "features": ["Acoustic Soundproofing", "65-inch Presentation Display", "Whiteboard Wall"],
+      "accessibility": "Direct from Library Atrium"
+    },
+    {
+      "id": "room-adm101",
+      "code": "ADM-101",
+      "name": "Registrar & Student Affairs Office",
+      "building_id": "admin-quad",
+      "building_name": "Administrative Quadrangle",
+      "floor": "Ground Floor",
+      "type": "Office",
+      "capacity": 20,
+      "features": ["Ticket Queue System", "Transcript Service Window", "Identity Card Issue Counter"],
+      "accessibility": "Step-free ramp entry"
+    },
+    {
+      "id": "room-sc102",
+      "code": "SC-102",
+      "name": "Ghost Brew Coffee & Student Lounge",
+      "building_id": "student-center",
+      "building_name": "Ghost Commons & Student Center",
+      "floor": "Ground Floor",
+      "type": "Dining & Recreation",
+      "capacity": 90,
+      "features": ["Specialty Espresso Bar", "Vegan & Halal Pastries", "Board Games Shelf", "Charging Docks"],
+      "accessibility": "Full ground level access"
+    }
+  ],
+  "departments": [
+    {
+      "id": "dept-cs",
+      "name": "Department of Computer Science & Engineering",
+      "head": "Dr. Eleanor Vance",
+      "office": "ST-305 (Science & Technology Block, 3rd Floor)",
+      "email": "cs-dept@specter.edu.demo",
+      "programs": ["B.Tech Computer Science", "M.Tech Artificial Intelligence", "Ph.D. Computing Sciences"],
+      "description": "Focuses on algorithmics, distributed architectures, neural networks, and cybersecurity."
+    },
+    {
+      "id": "dept-ee",
+      "name": "Department of Electrical & Robotics Engineering",
+      "head": "Prof. Alistair Drake",
+      "office": "ST-210 (Science & Technology Block, 2nd Floor)",
+      "email": "ee-dept@specter.edu.demo",
+      "programs": ["B.Tech Electrical & Electronics", "M.Tech Robotics & Autonomous Systems"],
+      "description": "Specializes in power electronics, sensor fusion, micro-controllers, and industrial robotics."
+    },
+    {
+      "id": "dept-ds",
+      "name": "School of Data Science & Quantum Computing",
+      "head": "Dr. Maya Lin",
+      "office": "TAI-302 (Alan Turing Innovation Center, 3rd Floor)",
+      "email": "datascience@specter.edu.demo",
+      "programs": ["B.S. Data Science & Analytics", "M.S. Quantum Informatics"],
+      "description": "Pioneering statistical modeling, large language model research, and quantum simulation."
+    }
+  ],
+  "timetables": [
+    {
+      "course_code": "CS-302",
+      "course_title": "Distributed Operating Systems",
+      "instructor": "Dr. Eleanor Vance",
+      "room": "ST-101",
+      "building": "Science & Technology Block",
+      "days": ["Monday", "Wednesday", "Friday"],
+      "time_slot": "10:00 AM - 11:30 AM",
+      "batch": "CS Year 3, Section A"
+    },
+    {
+      "course_code": "AI-401",
+      "course_title": "Deep Reinforcement Learning",
+      "instructor": "Dr. Maya Lin",
+      "room": "TAI-201",
+      "building": "Alan Turing Innovation Center",
+      "days": ["Tuesday", "Thursday"],
+      "time_slot": "02:00 PM - 03:30 PM",
+      "batch": "AI & DS Final Year"
+    },
+    {
+      "course_code": "SEC-205",
+      "course_title": "Applied Network Security & Cryptography",
+      "instructor": "Prof. Alistair Drake",
+      "room": "ST-301",
+      "building": "Science & Technology Block",
+      "days": ["Monday", "Wednesday"],
+      "time_slot": "01:30 PM - 03:00 PM",
+      "batch": "CS & EE Year 2"
+    },
+    {
+      "course_code": "ROB-310",
+      "course_title": "Autonomous Mobile Robotics Lab",
+      "instructor": "Dr. Samuel Crane",
+      "room": "TAI-102",
+      "building": "Alan Turing Innovation Center",
+      "days": ["Friday"],
+      "time_slot": "02:00 PM - 05:00 PM",
+      "batch": "Robotics Year 3"
+    },
+    {
+      "course_code": "HUM-101",
+      "course_title": "Ethics in Artificial Intelligence",
+      "instructor": "Prof. Cordelia Blackwood",
+      "room": "ST-204",
+      "building": "Science & Technology Block",
+      "days": ["Tuesday", "Thursday"],
+      "time_slot": "09:00 AM - 10:15 AM",
+      "batch": "Open Elective - All Branches"
+    }
+  ],
+  "campus_rules": [
+    {
+      "category": "Academic Attendance",
+      "rule_title": "75% Mandatory Attendance Policy",
+      "summary": "Students must maintain a minimum of 75% attendance in each registered theory and laboratory course.",
+      "details": "Students falling below 75% without authorized medical leave approved by the Dean of Academics (Room ADM-101) will not be permitted to take end-semester examinations. Medical certificates must be submitted within 3 working days of absence."
+    },
+    {
+      "category": "Library Regulations",
+      "rule_title": "Ada Lovelace Library Borrowing & Conduct",
+      "summary": "Undergraduate students may borrow up to 4 books for 14 calendar days; graduate students may borrow up to 8 books for 28 days.",
+      "details": "Overdue book fines are assessed at $0.50 per book per day. The 2nd Floor is an absolute 'Zero-Whisper Quiet Zone' where phone calls and video meetings are strictly prohibited. Open water bottles with sealed caps are allowed, but food is strictly forbidden."
+    },
+    {
+      "category": "Laboratory Safety",
+      "rule_title": "Lab Safety & Access Protocol",
+      "summary": "Closed-toe shoes, lab coats, and safety goggles are mandatory in hardware, robotics, and electrical laboratories.",
+      "details": "No food or sugary beverages are allowed inside computing or hardware labs at any time. Any hardware equipment leaving TAI-102 or ST-301 requires an approved digital gate pass from the Lab In-charge."
+    },
+    {
+      "category": "Campus WiFi & Cyber Conduct",
+      "rule_title": "Campus IT & Network Usage Policy",
+      "summary": "Connect to 'Specter-Secure-WiFi' using your student ID (e.g. s12345@specter.edu) and campus portal password.",
+      "details": "Torrenting, peer-to-peer file sharing of copyrighted media, and unauthorized network scanning/penetration testing on university infrastructure are strictly grounds for immediate network suspension and disciplinary inquiry."
+    },
+    {
+      "category": "Hostel & Curfew",
+      "rule_title": "Residential Hall Hours",
+      "summary": "Campus hostel main entry gates close at 10:30 PM on weekdays and 11:30 PM on weekends.",
+      "details": "Late night entry after curfew requires prior night-out permission logged on the student portal at least 4 hours before gate closure. Overnight guests must be registered at the Warden's Office."
+    },
+    {
+      "category": "Parking & Transport",
+      "rule_title": "Campus Vehicle & EV Charging Policy",
+      "summary": "Vehicles must possess a registered university parking permit sticker issued by Security Post A.",
+      "details": "Free Level 2 EV charging stations are located behind Science & Technology Block (Parking Lot C). Charging is limited to a maximum of 4 continuous hours per vehicle."
+    }
+  ],
+  "amenities": [
+    {
+      "id": "ghost-brew",
+      "name": "Ghost Brew Cafe",
+      "location": "Student Center (SC-102), Ground Floor",
+      "hours": "07:30 AM - 09:30 PM Daily",
+      "specialty": "Cold Brew, Matcha Latte, Fresh Croissants, Vegan Bowls",
+      "payment": "Campus Card, Debit/Credit, Apple Pay, Cashless"
+    },
+    {
+      "id": "central-dining",
+      "name": "Specter Dining Hall (Main Mess)",
+      "location": "Student Center, 1st Floor",
+      "hours": "Breakfast: 07:30 - 09:30 AM | Lunch: 12:00 - 02:30 PM | Dinner: 07:00 - 09:30 PM",
+      "specialty": "Rotating multi-cuisine buffet, salad bar, gluten-free station",
+      "payment": "Meal Plan swiped via Student ID Card"
+    },
+    {
+      "id": "health-center",
+      "name": "Campus Health & Wellness Dispensary",
+      "location": "Admin Quad Annex, Ground Floor, Room ADM-014",
+      "hours": "24/7 Nurse on duty; Physician hours: 09:00 AM - 05:00 PM Monday through Saturday",
+      "specialty": "First aid, emergency triage, prescription medications, counseling appointments",
+      "payment": "Free for enrolled students (covered by Student Health Fee)"
+    },
+    {
+      "id": "lost-found",
+      "name": "Campus Lost & Found Hub",
+      "location": "Security Post A, Main Gate",
+      "hours": "Open 24/7",
+      "specialty": "Unclaimed items retained for 45 days before charitable donation",
+      "contact": "lostfound@specter.edu.demo | ext. 4410"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Where is the Turing Robotics Lab?",
+      "answer": "The Turing Robotics & Embedded Systems Lab is located in the Alan Turing Innovation & AI Center (TAI), Ground Floor, Room TAI-102. It is equipped with soldering benches, 3D printers, and robotic arm arenas."
+    },
+    {
+      "question": "What is the attendance requirement to appear for exams?",
+      "answer": "Specter University requires a mandatory minimum of 75% attendance in each registered course. Students below 75% without approved medical leave cannot sit for end-semester exams."
+    },
+    {
+      "question": "How do I connect to campus WiFi?",
+      "answer": "Connect to 'Specter-Secure-WiFi' via WPA2-Enterprise. Enter your student email (e.g. s12345@specter.edu) as the identity and your campus portal password. Certificate validation: set to 'Do not validate' or use the university root certificate."
+    },
+    {
+      "question": "What are the Central Library hours and quiet rules?",
+      "answer": "The Ada Lovelace Central Library is open from 08:00 AM to 11:00 PM on weekdays and 09:00 AM to 08:00 PM on weekends. The 2nd Floor is a strict Zero-Whisper Quiet Zone."
+    },
+    {
+      "question": "Where can I get my student ID card replaced?",
+      "answer": "Visit the Registrar & Student Affairs Office in the Administrative Quadrangle, Ground Floor, Room ADM-101 (Open 09:00 AM - 04:30 PM Mon-Fri)."
+    },
+    {
+      "question": "When is CS-302 Distributed Operating Systems held?",
+      "answer": "CS-302 is held on Mondays, Wednesdays, and Fridays from 10:00 AM to 11:30 AM in Room ST-101 (Ada Lovelace Computing Hall in the Science & Technology Block), taught by Dr. Eleanor Vance."
+    }
+  ]
+}

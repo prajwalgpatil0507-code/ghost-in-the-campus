@@ -1,0 +1,18 @@
+[
+  {
+    "email": "student@specter.edu",
+    "name": "Jordan Hayes",
+    "password": "demo_password_sample",
+    "role": "Student",
+    "student_id": "SP-2026-4412",
+    "registered_at": "2026-10-27T10:00:00Z"
+  },
+  {
+    "email": "faculty@specter.edu",
+    "name": "Dr. Eleanor Vance",
+    "password": "demo_password_sample",
+    "role": "Faculty",
+    "student_id": "FAC-901",
+    "registered_at": "2026-10-27T09:00:00Z"
+  }
+]
